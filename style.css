@@ -1,8 +1,8 @@
 :root{
     --verde-platzi: #ACD9B2;
     --verde-platzi-opaco: #87ab8c;
+    --dark: #212529;
 }
-
 #header .text-platzi{
     color: var(--verde-platzi) !important; 
 }
@@ -59,10 +59,37 @@
 }
 
 
+#speakers .card{
+    height: 550px;
+    background: var(--dark)
+}
+
+#speakers .card-title{
+    color: var(--verde-platzi-opaco) !important;
+}
+#speakers .card-img-top{
+    min-height: 300px ;
+    filter: grayscale(50%);
+    object-fit: cover;
+
+}
+
 #footer{
-    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+    background: var(--dark)
 }
 #footer a{
     color: whitesmoke;
     text-decoration: none;
 }
+
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #speakers .card-text {
+        font-size: 0.9rem;
+    }
+  }
+ 
+  
+  
+  
