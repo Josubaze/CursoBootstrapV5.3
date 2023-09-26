@@ -74,6 +74,11 @@
 
 }
 
+#place-date img{
+    max-width: 100%;
+    filter: grayscale(50%);
+}
+
 #footer{
     background: var(--dark)
 }
@@ -89,6 +94,13 @@
         font-size: 0.9rem;
     }
   }
+
+  @media (min-width: 1200px) {
+    #place-date h2{
+        padding-top: 100px;
+    }
+
+  } 
  
   
   
