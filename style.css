@@ -2,6 +2,7 @@
     --verde-platzi: #ACD9B2;
     --verde-platzi-opaco: #87ab8c;
     --dark: #212529;
+    --shadow: #31373d;
 }
 #header .text-platzi{
     color: var(--verde-platzi) !important; 
@@ -78,6 +79,20 @@
     max-width: 100%;
     filter: grayscale(50%);
 }
+#place-date .bg-img{
+    background: linear-gradient(90deg, #1e7244, #29474b 25%, #224046);
+}
+#place-date .bg-text{
+    background: linear-gradient(90deg, #224046, #29474b 25%, #1e7244);
+}
+
+#asp-speakers{
+    background: var(--dark);
+}
+
+#asp-speakers .title-asp{
+    color: var(--verde-platzi-opaco);
+}
 
 #footer{
     background: var(--dark)
@@ -85,6 +100,10 @@
 #footer a{
     color: whitesmoke;
     text-decoration: none;
+}
+
+.tooltip-inner {
+    background-color: var(--dark);
 }
 
 
@@ -95,12 +114,17 @@
     }
   }
 
-  @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     #place-date h2{
         padding-top: 100px;
     }
+} 
 
-  } 
+@media (max-width: 992px) {
+    #place-date .bg-img{
+        background: linear-gradient(90deg, #224046, #29474b 25%, #1e7244);
+    }
+} 
  
   
   
