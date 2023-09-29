@@ -130,14 +130,12 @@
 } 
 
 @media (max-width: 992px) {
-    #place-date .bg-img{
-        background: linear-gradient(180deg, #124328, #2b4a4ff5 25%, #30555cf8);
-    }
-    #place-date .bg-text{
-        background: linear-gradient(180deg, #30555cf8, #2b4a4ff5 25%, #124328);
-    }
+    
     #place-date h2{
         padding-top:30px;
+    }
+    #place-date img{
+        border-radius: 0 !important;
     }
 
 } 
