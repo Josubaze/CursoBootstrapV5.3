@@ -4,7 +4,10 @@
     --dark: #212529;
     --shadow: #31373d;
 }
-#header .text-platzi{
+.inactive{
+    display: none;
+}
+.text-platzi{
     color: var(--verde-platzi) !important; 
 }
 #header .text-platzi:hover{
@@ -26,7 +29,7 @@
 }
 
 #main .carousel-inner img{
-    max-height: 70vh;
+    max-height: 100vh;
     filter: grayscale(70%);
     object-fit: cover;
 }
@@ -50,13 +53,14 @@
     height: 100%;
 }
 
-#carousel .btn-platzi{
+.btn-platzi{
     background: var(--verde-platzi);
     color: white;
 }
 
-#carousel .btn-platzi:hover{
-    background-color: var(--verde-platzi-opaco)
+.btn-platzi:hover{
+    background-color: var(--verde-platzi-opaco);
+    color: white;
 }
 
 
@@ -77,13 +81,15 @@
 
 #place-date img{
     max-width: 100%;
-    filter: grayscale(50%);
+    height:650px;
+    filter: grayscale(30%);
+    object-fit:cover;
 }
 #place-date .bg-img{
-    background: linear-gradient(90deg, #1e7244, #29474b 25%, #224046);
+    background: linear-gradient(180deg, #1b673d, #2b4b50f5 25%, #172c30f5);
 }
 #place-date .bg-text{
-    background: linear-gradient(90deg, #224046, #29474b 25%, #1e7244);
+    background: linear-gradient(180deg, #1b673d, #2b4b50f5 25%, #172c30f5);
 }
 
 #asp-speakers{
@@ -112,6 +118,9 @@
     #speakers .card-text {
         font-size: 0.9rem;
     }
+    #place-date h2{
+        padding-top: 100px;
+    }
   }
 
 @media (min-width: 1200px) {
@@ -122,8 +131,15 @@
 
 @media (max-width: 992px) {
     #place-date .bg-img{
-        background: linear-gradient(90deg, #224046, #29474b 25%, #1e7244);
+        background: linear-gradient(180deg, #124328, #2b4a4ff5 25%, #30555cf8);
     }
+    #place-date .bg-text{
+        background: linear-gradient(180deg, #30555cf8, #2b4a4ff5 25%, #124328);
+    }
+    #place-date h2{
+        padding-top:30px;
+    }
+
 } 
  
   
