@@ -133,11 +133,16 @@
     
     #place-date h2{
         padding-top:30px;
+        font-size: 1.5rem;
+    }
+    #place-date p{
+        font-size: 1rem !important;
     }
     #place-date img{
         border-radius: 0 !important;
+        max-height: 300px;
     }
-
+    
 } 
  
   
